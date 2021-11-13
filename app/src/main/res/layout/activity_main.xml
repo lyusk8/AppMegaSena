@@ -36,10 +36,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="20dp"
-        android:onClick="gerarAposta"
         android:text="Gerar aposta"
         android:textColor="@color/cardview_light_background"
         app:iconTint="@color/white"
         app:layout_constraintStart_toStartOf="@+id/numerosSorteados"
-        app:layout_constraintTop_toBottomOf="@+id/numerosSorteados" />
+        app:layout_constraintTop_toBottomOf="@+id/numerosSorteados"
+        tools:ignore="OnClick" />
 </androidx.constraintlayout.widget.ConstraintLayout>
