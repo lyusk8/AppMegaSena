@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun sortearNumeros():List<Int>{
         val numeros = ArrayList<Int>()
-        while(numeros.size <7){
+        while(numeros.size <6){
             val numero = ((1..60).random())
             if(numero in numeros){
                 continue
