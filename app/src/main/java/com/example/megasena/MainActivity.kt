@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun gerarAposta(){
         val numeros = findViewById<TextView>(R.id.numerosSorteados)
-        val texto = sortearNumeros().toString()
+        val texto = sortearNumeros().toString().replace("[", "").replace("]", "").replace(",", " -")
         numeros.setText(texto)
     }
 
