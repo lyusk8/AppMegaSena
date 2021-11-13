@@ -19,7 +19,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun gerarAposta(){
         val numeros = findViewById<TextView>(R.id.numerosSorteados)
-        val texto = sortearNumeros().toString().replace("[", "").replace("]", "").replace(",", " -")
+        val texto = sortearNumeros().toString().replace("[", "")
+            .replace("]", "").replace(",", " -")
         numeros.setText(texto)
     }
 
@@ -27,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         val numeros = ArrayList<Int>()
         while(numeros.size <6){
             val numero = ((1..60).random())
+
             if(numero in numeros){
                 continue
             }

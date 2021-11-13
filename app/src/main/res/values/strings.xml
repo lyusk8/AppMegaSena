@@ -2,4 +2,6 @@
     <string name="app_name">megaSena</string>
     <string name="sorteio">Mega Sena</string>
     <string name="numeros">Números sorteados</string>
+    <string name="sua_aposta">Sua aposta</string>
+    <string name="gerar_aposta">Gerar aposta</string>
 </resources>
