@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         numeros.setText(texto)
     }
 
-    private fun sortearNumeros():ArrayList<Int>{
+    private fun sortearNumeros():List<Int>{
         val numeros = ArrayList<Int>()
         while(numeros.size <7){
             val numero = ((1..60).random())
@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
             }
             numeros.add(numero)
         }
-        return numeros
+        val numerosOrd = numeros.sorted()
+        return numerosOrd
     }
 }
