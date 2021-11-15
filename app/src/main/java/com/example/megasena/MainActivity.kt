@@ -19,22 +19,20 @@ class MainActivity : AppCompatActivity() {
 
     private fun gerarAposta(){
         val numeros = findViewById<TextView>(R.id.numerosSorteados)
-        val texto = sortearNumeros().toString().replace("[", "")
+        numeros.text = sortearNumeros().toString().replace("[", "")
             .replace("]", "").replace(",", " -")
-        numeros.setText(texto)
     }
 
-    private fun sortearNumeros():List<Int>{
+    private fun sortearNumeros(): List<Int> {
         val numeros = ArrayList<Int>()
-        while(numeros.size <6){
+        while (numeros.size < 6) {
             val numero = ((1..60).random())
 
-            if(numero in numeros){
+            if (numero in numeros) {
                 continue
             }
             numeros.add(numero)
         }
-        val numerosOrd = numeros.sorted()
-        return numerosOrd
+        return numeros.sorted()
     }
 }
